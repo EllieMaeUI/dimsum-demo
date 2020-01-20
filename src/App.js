@@ -1,11 +1,11 @@
 import React from "react";
-import "./dimsum.scss";
+import DSButton from '@elliemae/ds-basic/Button'
+import "./App.scss";
 
-export default function App() {
-  return (
-    <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
-    </div>
-  );
-}
+export default () => (
+  <DSButton 
+    labelText='Dimsum' 
+    size='l' 
+    onClick={console.log('Hello Dimsum')}
+  />
+);
